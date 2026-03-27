@@ -191,7 +191,7 @@ background-color: rgba(73, 73, 73, 0.23);
 color:white;
 }
 
-.controls p {
+.controls code {
 	/* color: #A5FFA5; */
 	color: white;
 	background: #222;
