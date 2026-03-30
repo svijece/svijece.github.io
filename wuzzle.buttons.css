@@ -21,8 +21,7 @@ height: 100%;
 background: url('bg.png');
 }
 .button { 
-  /*font-family:'Open Sans Condensed','Arial Narrow',arial,verdana,trebuchet,sans-serif;*/
-  font-family: "Roboto", sans-serif;
+  /* font-family:'Open Sans Condensed','Arial Narrow',arial,verdana,trebuchet,sans-serif; */
 position: relative;
 display: inline-block;
 color: #FFFFFF;
