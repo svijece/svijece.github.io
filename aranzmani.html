@@ -1,146 +1,185 @@
 <!DOCTYPE html>
 <html lang="sr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sveće - One Page</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Elegantne Svijeće</title>
 
-    <!-- Bootstrap CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
-    <style>
-        body { scroll-behavior: smooth; }
-        .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img1.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 90vh;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-        }
-        .gallery img {
-            height: 250px;
-            object-fit: cover;
-            width: 100%;
-        }
-        footer {
-            background: #111;
-            color: #ccc;
-        }
-    </style>
+<style>
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #0d0d0d;
+    color: #f5e6c8;
+}
+
+h1,h2,h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.navbar {
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: blur(10px);
+}
+
+.hero {
+    height: 100vh;
+    background: radial-gradient(circle at center, rgba(255,180,80,0.2), #000), url('img1.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    text-shadow: 0 0 20px rgba(255,180,80,0.7);
+}
+
+.btn-gold {
+    background: linear-gradient(45deg, #ffcc70, #ff8c42);
+    border: none;
+    color: black;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-gold:hover {
+    transform: scale(1.05);
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.card {
+    background: #1a1a1a;
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 25px rgba(255,180,80,0.15);
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 0 40px rgba(255,180,80,0.4);
+}
+
+.card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+.gallery img {
+    border-radius: 20px;
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 30px rgba(255,180,80,0.5);
+}
+
+footer {
+    background: black;
+    color: #aaa;
+    padding: 20px;
+}
+</style>
 </head>
+
 <body>
 
-<!-- NAVBAR -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Sveće</a>
-        <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="nav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#home">Početna</a></li>
-                <li class="nav-item"><a class="nav-link" href="#about">O nama</a></li>
-                <li class="nav-item"><a class="nav-link" href="#gallery">Galerija</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contact">Kontakt</a></li>
-            </ul>
-        </div>
-    </div>
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+<div class="container">
+<a class="navbar-brand" href="#">🔥 Sveće</a>
+</div>
 </nav>
 
-<!-- HERO -->
-<section id="home" class="hero">
-    <div>
-        <h1 class="display-4">Ručno pravljene sveće</h1>
-        <p>Paketi, aranžmani i dekorativne sveće</p>
-        <a href="#gallery" class="btn btn-warning">Pogledaj ponudu</a>
-    </div>
+<section class="hero">
+<div>
+<h1>Luksuzne svijeće</h1>
+<p>Toplina. Mir. Elegancija.</p>
+<a href="#ponuda" class="btn btn-gold mt-3">Pogledaj ponudu</a>
+</div>
 </section>
 
-<!-- ABOUT -->
-<section id="about" class="py-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <h2>O nama</h2>
-                <p>Bavimo se izradom sveća za sve prilike – od dekorativnih, preko mirisnih do crkvenih sveća.</p>
-                <p>Nudimo pakete sveća, aranžmane i posebne narudžbine.</p>
-            </div>
-            <div class="col-md-6">
-                <img src="7.jpg.jpeg" class="img-fluid rounded">
-            </div>
-        </div>
-    </div>
+<section class="section text-center">
+<div class="container">
+<h2>Naša priča</h2>
+<p>Ručno pravljene sveće koje donose toplinu i spokoj u vaš dom.</p>
+</div>
 </section>
 
-<!-- GALLERY -->
-<section id="gallery" class="py-5 bg-light">
-    <div class="container">
-        <h2 class="text-center mb-4">Galerija</h2>
-        <div class="row gallery g-3">
-            <div class="col-md-4"><img src="1.jpg.jpeg" class="rounded"></div>
-            <div class="col-md-4"><img src="2.jpg.jpeg" class="rounded"></div>
-            <div class="col-md-4"><img src="3.jpg.jpeg" class="rounded"></div>
-            <div class="col-md-4"><img src="4.jpg.jpeg" class="rounded"></div>
-            <div class="col-md-4"><img src="5.jpg.jpeg" class="rounded"></div>
-            <div class="col-md-4"><img src="6.jpg.jpeg" class="rounded"></div>
-        </div>
-    </div>
+<section id="ponuda" class="section">
+<div class="container">
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="card">
+<img src="img2.jpg">
+<div class="card-body">
+<h5>Svijeće za gorenje</h5>
+<p>Dugotrajne i kvalitetne svijeće.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="8.jpg.jpeg">
+<div class="card-body">
+<h5>Paketi</h5>
+<p>Specijalne ponude i paketi.</p>
+</div>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="card">
+<img src="7.jpg.jpeg">
+<div class="card-body">
+<h5>Aranžmani</h5>
+<p>Elegantni dekorativni setovi.</p>
+</div>
+</div>
+</div>
+
+</div>
+</div>
 </section>
 
-<!-- PRODUCTS -->
-<section class="py-5">
-    <div class="container">
-        <h2 class="text-center mb-4">Ponuda</h2>
-        <div class="row g-4">
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="8.jpg.jpeg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Sveće za gorenje</h5>
-                        <p>Dugotrajne i kvalitetne sveće.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="9.jpg.jpeg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Paketi sveća</h5>
-                        <p>Povoljni paketi za sve prilike.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img src="10.jpg.jpeg" class="card-img-top">
-                    <div class="card-body">
-                        <h5>Aranžmani</h5>
-                        <p>Dekorativni aranžmani od sveća.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+<section class="section">
+<div class="container text-center">
+<h2>Galerija</h2>
+<div class="row g-3 gallery">
+<div class="col-md-4"><img src="1.jpg.jpeg" class="w-100"></div>
+<div class="col-md-4"><img src="2.jpg.jpeg" class="w-100"></div>
+<div class="col-md-4"><img src="3.jpg.jpeg" class="w-100"></div>
+<div class="col-md-4"><img src="4.jpg.jpeg" class="w-100"></div>
+<div class="col-md-4"><img src="5.jpg.jpeg" class="w-100"></div>
+<div class="col-md-4"><img src="6.jpg.jpeg" class="w-100"></div>
+</div>
+</div>
 </section>
 
-<!-- CONTACT -->
-<section id="contact" class="py-5 bg-light">
-    <div class="container text-center">
-        <h2>Kontakt</h2>
-        <p>Telefon: 060/123-456</p>
-        <p>Email: svece@email.com</p>
-        <p>Lokacija: Srbija</p>
-    </div>
+<section class="section text-center">
+<div class="container">
+<h2>Kontakt</h2>
+<p>📞 060/123-456</p>
+<p>✉️ svece@email.com</p>
+</div>
 </section>
 
-<!-- FOOTER -->
-<footer class="text-center py-3">
-    <p>© 2026 Sveće</p>
+<footer class="text-center">
+<p>© 2026 Elegantne sveće</p>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
